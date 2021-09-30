@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    flex: 1;
+  }
+  
+  article {
+    flex: 1;
+  }
+  
+  nav,
+  aside {
+    /* 12em is the width of the columns */
+    flex: 0 0 8em;
+  }
