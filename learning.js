@@ -37,12 +37,60 @@ console.log("--------------------")
 
 //fizzbuzz code:
 
-for (var index = 1; index < 101; index++) {
-    if (index % 15 == 0) 
-    console.log("FizzBuzz");
-    else if (index % 3 == 0) 
-    console.log("Fizz");
-    else if (index % 5 == 0) 
-    console.log("Buzz");
-    else console.log(index);
+//for (var index = 1; index < 101; index++) {
+    //if (index % 15 == 0) console.log("FizzBuzz");
+   // else if (index % 3 == 0) console.log("Fizz");
+   // else if (index % 5 == 0) console.log("Buzz");
+    //else console.log(index);
+//}
+
+console.log("--------------------------")
+let doSomething = function(){
+    //run this code later
 }
+
+let fun = function() {
+    console.log("Function says hello");
+};
+fun(); fun(); fun(); fun();
+
+console.log("---------------------------")
+
+let getGreeting = function() {
+    return "Hello From a Function!";
+};
+let greeting = getGreeting();
+console.log(greeting);
+
+console.log("---------------------------")
+let greet = function(name, timeOfDay) {
+    return "Good " + timeOfDay + ", " + name;
+}
+console.log(greet("Bob", "evening"));
+console.log(greet("Quinn", "day"));
+
+console.log("---------------------------")
+
+let add = function(num1, num2) {
+    return num1 + num2;
+}
+console.log("Adding")
+console.log(add(5, 10));
+
+let subtract = function(num1, num2) {
+    return num1 - num2;
+}
+console.log("Subtracting")
+console.log(subtract(37298, 263));
+
+let multiply = function(num1, num2) {
+    return num1 * num2;
+}
+console.log("Multiplication")
+console.log(multiply(84, 12));
+
+let divide = function(num1, num2) {
+    return num1 / num2;
+}
+console.log("Division")
+console.log(divide(76, 3));
