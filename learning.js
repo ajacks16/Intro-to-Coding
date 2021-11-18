@@ -94,3 +94,33 @@ let divide = function(num1, num2) {
 }
 console.log("Division")
 console.log(divide(76, 3));
+
+console.log("------------------------------")
+
+let a = [1, 2, 3];
+let b = ["x", "y", "z"];
+let c = [a, b]
+console.log(a, b, c)
+
+//push and pop
+//let a = [1, 2, 3];
+//a.push(2);
+//a.push(3);
+//a.pop();
+
+// arrays use [], and objects use {}
+//arrays are organized lists, objects are organized collections
+
+//let o = {}
+//o.name = "Nathan";
+//o.age = 100;
+//cl( o );
+
+//this is the same thing as this ^
+let o = {
+    name: "Nathan",
+    age: 100
+};
+console.table(o);
+
+console.log("------------------------------")
