@@ -248,4 +248,7 @@ if (word.toLowerCase() === backwardWord.toLowerCase()) {
 
 
 
-//CHAPTER 9
+
+
+//THIS IS RANDOM CODE FROM CLASS
+let d = new Date();
