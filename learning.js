@@ -219,31 +219,31 @@ values.forEach(value => {
 
 
   //CHAPTER 8
-const word = prompt("shark:");
-console.log(`The word ${word} is ${word.length} characters long`);
-console.log(`Its lowercase value is ${word.toLowerCase()}`);
-console.log(`Its uppercase value is ${word.toUpperCase()}`);
-let vowelCount = 0;
-let backwardWord = "";
-[...word].forEach(letter => {
-  const lowerLetter = letter.toLowerCase();
-  if (
-    lowerLetter === "a" ||
-    lowerLetter === "e" ||
-    lowerLetter === "i" ||
-    lowerLetter === "o" ||
-    lowerLetter === "u" ||
-    lowerLetter === "y"
-  ) {
-    vowelCount++;
-  }
-  backwardWord = letter + backwardWord;
-});
-console.log(`It has ${vowelCount} vowels`);
-console.log(`Its backwards value is ${backwardWord}`);
-if (word.toLowerCase() === backwardWord.toLowerCase()) {
-  console.log("It's a palindrome");
-}
+//const word = prompt("shark:");
+//console.log(`The word ${word} is ${word.length} characters long`);
+//console.log(`Its lowercase value is ${word.toLowerCase()}`);
+//console.log(`Its uppercase value is ${word.toUpperCase()}`);
+//let vowelCount = 0;
+//let backwardWord = "";
+//[...word].forEach(letter => {
+ // const lowerLetter = letter.toLowerCase();
+ // if (
+ //   lowerLetter === "a" ||
+ //   lowerLetter === "e" ||
+ //   lowerLetter === "i" ||
+  //  lowerLetter === "o" ||
+  //  lowerLetter === "u" ||
+  //  lowerLetter === "y"
+ // ) {
+ //   vowelCount++;
+ // }
+ // backwardWord = letter + backwardWord;
+//});
+//console.log(`It has ${vowelCount} vowels`);
+//console.log(`Its backwards value is ${backwardWord}`);
+//if (word.toLowerCase() === backwardWord.toLowerCase()) {
+ // console.log("It's a palindrome");
+//}
 
 
 
@@ -251,4 +251,4 @@ if (word.toLowerCase() === backwardWord.toLowerCase()) {
 
 
 //THIS IS RANDOM CODE FROM CLASS
-let d = new Date();
+let n = new Date();
