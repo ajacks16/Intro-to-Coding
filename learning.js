@@ -246,9 +246,19 @@ values.forEach(value => {
 //}
 
 
-
+console.log("-------------------------------------------------")
 
 
 
 //THIS IS RANDOM CODE FROM CLASS
 let n = new Date();
+console.log(n)
+
+let m = Math.floor (Math.random () * 1000) + 1
+console.log(m)
+
+let myArray = ["bottle cap", "keys", "perfume", "button", "italian flag", "rusty nail"];
+let stuff = myArray [Math.floor(Math.random() * myArray.length)];
+console.log(stuff)
+
+console.log("--------------------------------------------------")
