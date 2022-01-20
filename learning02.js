@@ -77,7 +77,7 @@ let add = function(num1, num2) {
   return num1 + num2;
 }
 console.log("Adding")
-console.log(add(5, 10));
+console.log(add(5, 10)); 
 
 let subtract = function(num1, num2) {
     return num1 - num2;

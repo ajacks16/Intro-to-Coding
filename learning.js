@@ -261,4 +261,4 @@ let myArray = ["bottle cap", "keys", "perfume", "button", "italian flag", "rusty
 let stuff = myArray [Math.floor(Math.random() * myArray.length)];
 console.log(stuff)
 
-console.log("--------------------------------------------------")
+console.log("--------------------------------------------------") 

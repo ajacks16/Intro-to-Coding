@@ -26,7 +26,7 @@ function addWords() {
 
   // Mark first word as current-word
   wordSection.firstChild.classList.add("current-word");
-}
+} 
 
 // Word Colors
 const colorCurrentWord = "#dddddd";
