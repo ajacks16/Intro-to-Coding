@@ -26,7 +26,7 @@ let getRandomRockPaperScissors = function () {
   
   let congratulateWinner = function (winner) {
     if (winner === "user") {
-      cl("You don't suck!");
+      cl("You won!");
     } else if (winner === "computer") {
       cl("You lose lol");
     } else {
