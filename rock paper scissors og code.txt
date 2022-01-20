@@ -1,0 +1,37 @@
+let getRPS = function() {
+    let rps = ["rock", "paper", "scissors"];
+    return rps[Math.floor(Math.random() * rps.length)];
+};
+
+let getUserInput = function () {
+  let userInput = process.argv[2];
+  return userInput || getRPS();
+};
+
+let getWinner = function(userInput, computerInput){
+ if (userInput === computerInput) {
+     return "tie";
+ }
+ if ((userInput === "rock" && computerInput === "scissors") ||
+  (userInput === "scissors" && computerInput === "paper") ||
+ (userInput === "paper" && computerInput === "rock"))
+
+{return "win";} 
+else
+{return "lose";}
+}
+
+let congratulate = function(results) {
+if (results === "tie") {
+    console.log("You both suck");
+} else if (results === "win") {
+    console.log("You won");
+} else {
+    console.log("You lost lol") };
+}
+
+
+let userInput = getUserInput();
+let computerInput = getRPS();
+let results = getWinner(userInput, computerInput);
+congratulate(results);
