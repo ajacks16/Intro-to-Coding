@@ -1,3 +1,4 @@
+
 let buildDeck = function () {
     let deck = [];
     for (let rank = 2; rank < 15; rank++) {
@@ -42,12 +43,13 @@ let getRankName = function (rank) {
             return rank.toString();
     }
 };
-let dealCard = function () {let index = Math.floor( Math.random() * deck.length);
-    let card = deck.splice(index, 1) [0];
-    return card;};
+let dealCard = function () {};
 let dealHand = function () {
     return [dealCard(), dealCard(), dealCard(), dealCard(), dealCard()];
 };
+let index = Math.floor( Math.random() * deck.length);
+let card = deck.splice(index, 1) [0];
+return card;
 
 let deck = buildDeck();
 console.table(deck);
