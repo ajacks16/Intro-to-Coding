@@ -69,3 +69,4 @@ console.table(hand2);
 //use card-game.js for the actual website (https://r.search.yahoo.com/_ylt=AwrC5rJLLgViDlEAhRD8w8QF;_ylu=c2VjA2NkLWF0dHIEc2xrA3NvdXJjZQR2dGlkAwRydXJsA2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9djhhNjNvWHhuYzQ-/RV=2/RE=1644535499/RO=10/RU=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3dv8a63oXxnc4/RK=2/RS=8xAZseyKlRI76o_KLT03znSr6Dw-)
 
 //for the win-lose situation, figure out how to create a thing that identifies which card has the higher number, then you could probably use the userinput thing from rps.js
+//first, figure out how to call one card from both players hands
