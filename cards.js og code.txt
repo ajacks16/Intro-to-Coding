@@ -1,4 +1,3 @@
-
 let buildDeck = function () {
     let deck = [];
     for (let rank = 2; rank < 15; rank++) {
@@ -43,16 +42,46 @@ let getRankName = function (rank) {
             return rank.toString();
     }
 };
-let dealCard = function () {};
+let dealCard = function () {let index = Math.floor( Math.random() * deck.length);
+    let card = deck.splice(index, 1) [0];
+    return card;};
 let dealHand = function () {
     return [dealCard(), dealCard(), dealCard(), dealCard(), dealCard()];
 };
-let index = Math.floor( Math.random() * deck.length);
-let card = deck.splice(index, 1) [0];
-return card;
+let dealCard2 = function () {let index = Math.floor( Math.random() * deck.length);
+    let card = deck.splice(index, 1) [0];
+    return card;};
+let dealHand2 = function () {
+    return [dealCard(), dealCard(), dealCard(), dealCard(), dealCard()];
+};
 
 let deck = buildDeck();
-console.table(deck);
+//console.table(deck);
 
 let hand = dealHand();
 console.table(hand);
+
+let hand2 = dealHand2();
+console.table(hand2);
+
+
+// players, rules, win-lose
+let createPlayer = function(name) {
+    return {
+      name: name,
+      hand: [],
+      wins: 0
+    };
+  }
+  
+let player1 = {
+    name: "Auden",
+    hand: getHand(),
+    wins: 0
+};
+
+let player2 = {
+    name: "Computer",
+    hand2: getHand2(),
+    wins: 0
+};
