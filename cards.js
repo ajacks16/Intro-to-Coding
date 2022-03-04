@@ -79,18 +79,13 @@ console.log(player1)
  let player2 = {
     name: "Computer",
     hand: dealHand2(),
- };
+ }; 
 console.log(player2)
 
-//rules, win-lose
+
 let sortByRank = function(hand) {
     return hand.sort(function(a, b) { return b.rank - a.rank });
   }
   sortByRank(hand);
   
 let highestCard = hand[0];
-
-
-
-
-
