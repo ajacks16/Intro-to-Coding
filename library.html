@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <h1>Hello</h1>
+    <p>Yes or No</p>
+
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+
+    <p class="answer" id="yesAnswer">You said yes, you are correct and cool</p>
+    <p class="answer" id="noAnswer">You said no, you are wrong and not smart</p>
+
+
+    <script src="lib/"></script>
+    <script>
+     Vue.createApp({
+         data: function() {
+             return{
+                 answer: null
+             }
+         },
+         computed: {
+             isYes() {
+                 this.answer === 'yes';
+             },
+            isNo() {
+                this.answer === 'no';
+            },
+         },
+
+        },
+         methods, {setAnswer(value) {
+             this.answer = value;
+         },
+        },
+    ).mount('#app');
+    </script>
+    
+</body>
+</html>
