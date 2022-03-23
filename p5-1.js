@@ -1,20 +1,29 @@
 ///<reference path="lib/p5.global-mode.d.ts"/>
 
-var setup = function() {
-    createCanvas (600, 400);
+var setup = function () {
+    createCanvas(600, 400);
 };
 
-var draw = function() {
-    background(100); 
-    fill (0, 0, 255)
-    circle(mouseX, mouseY, 100)
+var draw = function () {
+    background(140);
+    fill(255, 0, 0)
+    square(500,30, 20)
 
-    fill(199, 50, 40)
-    square(120, 99, 200,)
+    fill(255, 0, 0)
+    square(500,50, 20)
 
-    fill(0, 255, 0)
-    triangle(100, 140, 130, 120, 160, 120)
+    fill(255, 0, 0)
+    square(500,70,20)
 
-}; 
+    fill(255, 0, 0)
+    square(520,50,20)
+
+    fill(255,0,0)
+    square(520,70,20)
+
+    fill(255,0,0)
+    square(520,90,20)
+
+};
 
 //for loops, frameRates, mouseY and mouseX
