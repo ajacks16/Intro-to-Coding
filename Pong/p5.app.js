@@ -2,12 +2,16 @@
 
 let game;
 
-var setup = function () {
-    createCanvas(windowWidth, windowHeight);
-    background(100);
-    game = new Pong
+var setup = function() {
+    createCanvas(windowWidth, windowHeight - 4);
+    game = new Pong();
 };
 
 var draw = function () {
     game.draw();
+};
+
+var windowResized = function () {
+    resizeCanvas(windowWidth, windowHeight - 4);
+    game = new Pong();
 };
