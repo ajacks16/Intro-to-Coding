@@ -46,20 +46,41 @@ class LeftPaddle extends Paddle {
     this.y = mouseY;
     super.draw();
   }
-}
+  isCollidingWith(ball) {
+    if (ball.x + ball.size > this.x && ball.y + ball.size >= this.y && ball.y <= this.y + this.height) {
+      if (ball.vx < 0) {
+        return false;
+      } else {
+        this.registerCollision();
+        return true;
+      }
+    }
+  }
+  }
+
 class RightPaddle extends Paddle {
   x = windowWidth - 50;
   draw() {
     this.y = mouseY;
     super.draw();
   }
+  isCollidingWith(ball) {
+    if (ball.x + ball.size > this.x && ball.y + ball.size >= this.y && ball.y <= this.y + this.height) {
+      if (ball.vx < 0) {
+        return false;
+      } else {
+        this.registerCollision();
+        return true;
+      }
+    }
+  }
 }
 class Ball {
   constructor() {
     this.x = random(windowWidth);
     this.y = random(windowHeight);
-    this.vx = 6;
-    this.vy = 4;
+    this.vx = 7;
+    this.vy = 6;
     this.color = 1;
   }
 
@@ -73,6 +94,11 @@ class Ball {
     }
     this.x += this.vx;
     this.y += this.vy;
-    square(this.x, this.y, 10);
+    circle(this.x, this.y, 20,20,20);
+
+    if (this.leftPaddle.isCollidingWith(this) || this.rightPaddle.isCollidingWith(this)) {
+      console.log("Collision");
+      this.vx = this.vx;
+    }
   }
 }
